@@ -9,7 +9,7 @@ const axios = require('axios');
 // tag::app[]
 class App extends React.Component {
 
-	constructor(props) {
+	constructor(props) { 
 		super(props);
 		this.state = {todos: []};
 	}
