@@ -29,7 +29,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<TodoList todos={this.state.todos}/>	
-				<h2>REST: /api/todos</h2>
+				<h2>REST: /api/todos</h2> 
 			</div>
 		)
 	}
