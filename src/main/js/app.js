@@ -14,6 +14,9 @@ class App extends React.Component {
 		this.state = {todos: []};
 	}
 
+	// The common convention is to initialize state with all your attributes empty in the constructor. 
+	// Then you lookup data from the server using componentDidMount and populate your attributes. 
+	// From there on, updates can be driven by user action or other events.
 	componentDidMount() { 
 		// TODO: don't do /api/todos if the app is not in the localhost:8080 
 		axios.get("api/todos").then(res => {
