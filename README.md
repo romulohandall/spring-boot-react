@@ -8,4 +8,4 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-(node and npm should be installed before)
+(nodejs and npm should be installed before)
