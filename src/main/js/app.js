@@ -15,7 +15,7 @@ class App extends React.Component {
 	}
 
 	componentDidMount() { 
-		// TODO: don't do /api/todos if the app is not in the localhost:8080
+		// TODO: don't do /api/todos if the app is not in the localhost:8080 
 		axios.get("api/todos").then(res => {
 			console.log("Received Successful response from server!");
 			console.log(res);
