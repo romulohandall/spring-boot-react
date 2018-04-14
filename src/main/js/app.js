@@ -42,6 +42,7 @@ class App extends React.Component {
 // tag::todo-list[]
 class TodoList extends React.Component{
 	render() {
+		// we must have key attribute at each object and it must be unique
 		var todos = this.props.todos.map(todo =>
 			<Todo key={todo._links.self.href} todo={todo}/>
 		);
