@@ -3,7 +3,7 @@
 // tag::vars[]
 const React = require('react');
 const ReactDOM = require('react-dom');
-const client = require('./client');
+const axios = require('axios');
 // end::vars[]
 
 // tag::app[]
@@ -14,9 +14,14 @@ class App extends React.Component {
 		this.state = {todos: []};
 	}
 
-	componentDidMount() {
-		client({method: 'GET', path: '/api/todos'}).done(response => {
-			this.setState({todos: response.entity._embedded.todos});
+	componentDidMount() { 
+		// TODO: don't do /api/todos if the app is not in the localhost:8080
+		axios.get("api/todos").then(res => {
+			console.log("Received Successful response from server!");
+			console.log(res);
+			this.setState({todos: res.data._embedded.todos});
+		}, err => {
+			console.log("Server rejected response with: " + err);
 		});
 	}
 
