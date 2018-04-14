@@ -8,4 +8,4 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-nodejs and npm will be installed by maven (check pom.xml)
+nodejs and npm will be installed by maven (check pom.xml).
