@@ -1,7 +1,7 @@
 package com.cihangirmercan.springbootreact;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface TodoRepository extends CrudRepository<Todo, Long> {
+public interface TodoRepository extends PagingAndSortingRepository<Todo, Long> {
 
 }

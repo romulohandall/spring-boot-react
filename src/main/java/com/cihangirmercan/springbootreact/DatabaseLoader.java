@@ -18,5 +18,7 @@ public class DatabaseLoader implements CommandLineRunner {
 	public void run(String... strings) throws Exception {
 		this.repository.save(new Todo("Learn Spring Boot", "27.05.2018", "No"));
 		this.repository.save(new Todo("Learn React", "27.05.2018", "No"));
+		this.repository.save(new Todo("Learn TypeScript", "27.05.2018", "No"));
+		this.repository.save(new Todo("Learn Microservices", "27.05.2018", "No"));
 	}
 }
