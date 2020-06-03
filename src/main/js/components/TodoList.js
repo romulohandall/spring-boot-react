@@ -20,9 +20,11 @@ export default class TodoList extends React.Component{
 			<table>
 				<tbody>
 					<tr>
-						<th>Description</th>
-						<th>End Date</th>
-						<th>Is Completed?</th>
+						<th>Nome</th>
+						<th>CPF</th>
+						<th>Endereço</th>
+						<th>Telefone</th>
+						<th>E-mail</th>
 					</tr>
 					{todos}
 				</tbody>

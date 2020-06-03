@@ -1,5 +1,4 @@
-# spring-boot-react
-React.js and Spring Data REST. Demo: http://46.101.243.149/spring-boot-react
+# surritec spring-boot-react
 
 ```
 mvn clean install
@@ -8,4 +7,4 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-nodejs, npm and modules will be installed by maven (check pom.xml).
+nodejs, npm and modules serão instalados pelo maven (verifique o pom.xml).

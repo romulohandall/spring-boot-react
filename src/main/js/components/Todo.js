@@ -16,9 +16,12 @@ class Todo extends React.Component{
 	render() {
 		return (
 			<tr>
-				<td>{this.props.todo.description}</td>
-				<td>{this.props.todo.endDate}</td>
-				<td>{this.props.todo.isCompleted}</td>
+				<td>{this.props.todo.nome}</td>
+				<td>{this.props.todo.cpf}</td>
+				<td>{this.props.todo.logadouro}</td>
+				<td>{this.props.todo.telefone}</td>
+				<td>{this.props.todo.email}</td>
+
 				<td>
 					<button onClick={this.handleDelete}>Delete</button>
 				</td>

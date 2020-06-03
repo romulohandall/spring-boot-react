@@ -15,9 +15,11 @@ export default class Create extends React.Component {
 		e.preventDefault(); // prevent enter key
     
         var newTodo = {
-            description: ReactDOM.findDOMNode(this.refs['description']).value.trim(),
-            endDate: ReactDOM.findDOMNode(this.refs['endDate']).value.trim(),
-            isCompleted: ReactDOM.findDOMNode(this.refs['isCompleted']).value.trim(),
+            nome: ReactDOM.findDOMNode(this.refs['nome']).value.trim(),
+            cpf: ReactDOM.findDOMNode(this.refs['cpf']).value.trim(),
+            logadouro: ReactDOM.findDOMNode(this.refs['logadouro']).value.trim(),
+            telefone: ReactDOM.findDOMNode(this.refs['telefone']).value.trim(),
+            email: ReactDOM.findDOMNode(this.refs['email']).value.trim(),
         };
     
         axios.post('api/todos', newTodo).then((result) => {
@@ -28,18 +30,24 @@ export default class Create extends React.Component {
     render() {
 		return (
             <div>
-                <h4><Link to="/">Todo List</Link></h4>
+                <h4><Link to="/">Lista de Clientest</Link></h4>
                 <div>
-                    <h4>Create new Todo</h4>
+                    <h4>Adicionar Cliente</h4>
                     <form onSubmit={this.handleSubmit}>
                         <p>
-                            <input type="text" placeholder='description' ref='description' />
+                            <input type="text" placeholder='nome' ref='nome' />
                         </p>
                         <p>
-                            <input type="text" placeholder='endDate' ref='endDate' />
+                            <input type="text" placeholder='cpf' ref='cpf' />
                         </p>
                         <p>
-                            <input type="text" placeholder='isCompleted' ref='isCompleted' />
+                            <input type="text" placeholder='logadouro' ref='logadouro' />
+                        </p>
+                        <p>
+                            <input type="text" placeholder='telefone' ref='telefone' />
+                        </p>
+                        <p>
+                            <input type="text" placeholder='email' ref='email' />
                         </p>
                         <button type="submit">Submit</button>
                     </form>
@@ -48,3 +56,4 @@ export default class Create extends React.Component {
 		)
     }
 }
+

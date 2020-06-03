@@ -35,7 +35,7 @@ export default class App extends React.Component {
 		return (
 			<div>
 				<h4>
-					<Link to="/create">Add Todo</Link>
+					<Link to="/create">Adicionar Cliente</Link>
 				</h4>
 				<TodoList todos={this.state.todos}
 						  onDelete={this.onDelete}/>	
